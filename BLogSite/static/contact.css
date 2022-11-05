@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(pic4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    font-family: sans-serif;
+    }
+
+    .Contact{
+        width: 400px;
+        max-height: fit-content;
+        background-color: rgba(9, 1, 22, 0.199);
+        color: rgb(184, 199, 199);
+        font-size: medium;
+        top: 15%;
+        left: 42%;
+        position: absolute;
+        transform: translate(-20%, -3%);
+        box-sizing: border-box;
+        padding: 40px 70px;
+    border-radius: 7px;
+    }
+
+    h1{
+        margin: 10px;
+        padding: 0px 0px 3px;
+    text-align: center;
+    font-size: 35px;
+    }
+
+    .Contact h1{
+        background-color: rgba(6, 6, 29, 0);
+        border-radius: 7px;
+        margin: 30px;
+        padding 30px;
+        font-weight: bold;
+    }
+
+    .Contact input{
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 4px;
+    }
+
+    .Contact input[type="text"], input[type="number"], input[type="password"]
+    {
+    border:none;
+    border-bottom: 2px solid rgb(160, 158, 151);
+    background: transparent;
+    color: rgb(235, 234, 228);
+    outline: none;
+    height: 20px;
+    font-size: 16px;
+    }
+
+    .Contact input[type="submit"]
+    {
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 250px;
+    color: #fff;
+    background: rgba(186, 186, 241, 0.623);
+    font-size: 15px;
+    border-radius: 20px;
+    }
+
+    .Contact input[type="submit"]:hover
+    {
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+    }
+
+    .Contact a {
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 17px;
+    color: cornsilk;
+
+    }
+
+    .Contact a:hover
+    {
+    cursor: pointer;
+    color: rgb(255, 254, 254);
+    font-weight: bold;
+
+    }

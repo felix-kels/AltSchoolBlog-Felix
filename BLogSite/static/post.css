@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(pic4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    font-family: sans-serif;
+    }
+
+
+    .card-body{
+    margin-right: auto;
+    margin-left: auto;
+    width: 1100px;
+    box-shadow: 0 15px 25px rgba(90, 101, 139);
+    height: 300px;
+    border-radius: 5px;
+    backdrop-filter: blur(14px);
+    padding: 10px;
+
+
+    background:   rgb(181, 188, 212)
+    }
+
+    .Contact{
+        width: 400px;
+        max-height: fit-content;
+        background-color: rgba(9, 1, 22, 0.199);
+        color: rgb(184, 199, 199);
+        font-size: medium;
+        top: 7%;
+        left: 42%;
+        position: absolute;
+        transform: translate(-20%, -3%);
+        box-sizing: border-box;
+        padding: 40px 70px;
+    border-radius: 7px;
+    }
+    .logo i{
+        height: 50px;
+        width: 50px;
+        background: transparent;
+        border: 2px solid rgb(238, 237, 231);
+        color: rgb(181, 188, 212);
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        cursor: pointer;
+        }
+        .logo i:hover{
+
+            color: whitesmoke;
+            border:2px solid transparent;
+            transition: .3s;
+            }
+            .container{
+            padding-top: 90px;
+            }
+    h1{
+        margin: 10px;
+        padding: 0px 0px 3px;
+    text-align: center;
+    font-size: 35px;
+    }
+
+    .Contact h1{
+        background-color: rgba(6, 6, 29, 0);
+        border-radius: 7px;
+        margin: 30px;
+        padding 30px;
+        font-weight: bold;
+    }
+
+    .Contact input{
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 4px;
+    }
+
+    .Contact input[type="text"], input[type="number"], input[type="password"]
+    {
+    border:none;
+    border-bottom: 2px solid rgb(160, 158, 151);
+    background: transparent;
+    color: rgb(235, 234, 228);
+    outline: none;
+    height: 20px;
+    font-size: 16px;
+    }
+
+    .Contact input[type="submit"]
+    {
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 250px;
+    color: #fff;
+    background: rgba(186, 186, 241, 0.623);
+    font-size: 15px;
+    border-radius: 20px;
+    }
+
+    .Contact input[type="submit"]:hover
+    {
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+    }
+
+    .Contact a {
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 17px;
+    color: cornsilk;
+
+    }
+
+    .Contact a:hover
+    {
+    cursor: pointer;
+    color: rgb(255, 254, 254);
+    font-weight: bold;
+
+    }

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='contact.css')}}">
+        <div class="Contact">
+            <h1>Contact Me</h1>
+            <form>
+                <p>Name</p>
+                <input type="text" name="name" placeholder="Enter Name" required>
+
+                <p>Email</p>
+                <input type="text" name="email" placeholder="Enter Email" required>
+
+                <p>Message</p>
+                <input type="text" name="message" placeholder="Message." required>
+
+<!--                <p><label for="priority">Priority</label>-->
+<!--                    <select name="Priority" id="priority">-->
+<!--                      <option value="high">High Priority</option>-->
+<!--                      <option value="low">Low Priority</option>-->
+<!--                </select></p> <br> <br>-->
+                <input type="submit" name="" value="Send">
+            </form>
+        </div>
+
+{% endblock %}
