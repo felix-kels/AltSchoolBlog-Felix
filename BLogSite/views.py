@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request, flash, redirect, url_for
+from flask import Blueprint, render_template, request, flash, redirect, url_for, abort
 from flask_login import login_required, current_user
 from .models import Post, User, Comment, Like
 from . import db
@@ -114,7 +114,29 @@ def delete_like(post_id):
     return redirect(url_for("views.home"))
 
 
-# @views.route('/edit-post/<post_id>', methods=['GET', 'POST'])
+@views.route('/post/<int:id>')
+def post(id):
+    post = Post.query.get_or_404(id)
+    return render_template('post.html', post=post, user=current_user)
+
+
+@views.route("/update-post/<int:id>", methods=["GET", "POST"])
+@login_required
+def update_post(id):
+    post = Post.query.get_or_404(id)
+    if post.user != current_user:
+        abort(404)
+    if request.method == "POST":
+        post.text = request.form.get("text")
+        if not post.text:
+            flash("Post cannot be empty", category="error")
+        else:
+            post = Post(text=post.text)
+            db.session.commit()
+            flash("Post updated successfully", category="success")
+            return redirect(url_for("views.home"))
+    return render_template("update_post.html", user=current_user)
+
 
 
 
