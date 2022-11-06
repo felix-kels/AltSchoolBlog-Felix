@@ -114,10 +114,10 @@ def delete_like(post_id):
     return redirect(url_for("views.home"))
 
 
-@views.route('/post/<int:id>')
-def post(id):
-    post = Post.query.get_or_404(id)
-    return render_template('post.html', post=post, user=current_user)
+# @views.route('/post/<int:id>')
+# def post(id):
+#     post = Post.query.get_or_404(id)
+#     return render_template('post.html', post=post, user=current_user)
 
 
 @views.route("/edit-post/<int:id>", methods=["GET", "POST"])

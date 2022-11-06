@@ -10,11 +10,11 @@ body{
 
     .register{
         width: 400px;
-        max-height: fit-content;
+        height: 650px;
         background-color: rgba(9, 1, 22, 0.199);
         color: rgb(184, 199, 199);
         font-size: medium;
-        top: 20%;
+        top: 12%;
         left: 42%;
         position: absolute;
         transform: translate(-20%, -3%);
