@@ -120,9 +120,9 @@ def post(id):
     return render_template('post.html', post=post, user=current_user)
 
 
-@views.route("/update-post/<int:id>", methods=["GET", "POST"])
+@views.route("/edit-post/<int:id>", methods=["GET", "POST"])
 @login_required
-def update_post(id):
+def edit_post(id):
     post = Post.query.get_or_404(id)
     if post.user != current_user:
         abort(404)
